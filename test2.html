@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        div.image {
+            background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iNDI4LjM4NCwyNjMuMjMyIDMzNS45MzYsMTA5LjQ3MiAyOTcuODU2LDEzMi4zODQgMjM3LjM3NiwxNjguNzM2IDI5Ny44NTYsMjY5LjQ0IDM3Ny42OTYsNDAyLjUyOCAgICAgNDI4LjM4NCw0MDIuNTI4IDUxMiw0MDIuNTI4ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjI5Ny44NTYsMzQ3Ljc0NCAyMTcuMzEyLDIxMy43MjggMTIxLjg4OCwyNzEuMTY4IDExOC42MjQsMjczLjA4OCAxMjEuODg4LDI3OC40OTYgMTk2LjQxNiw0MDIuNTI4ICAgICAyOTcuODU2LDQwMi41MjggMzMwLjYyNCw0MDIuNTI4ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjEyMS44ODgsMzU2LjcwNCA5OC42NTYsMzE4LjExMiAwLDM3Ny4zNzYgMTUuMDcyLDQwMi41MjggMTIxLjg4OCw0MDIuNTI4IDE0OS4zNzYsNDAyLjUyOCAgICIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)}
+        
+        *
+        {
+            margin-top: none;
+              font-family: 'tex_gyre_adventorbold_italic';
+    src: url('texgyreadventor-bolditalic-webfont.woff2') format('woff2'),
+         url('texgyreadventor-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+        }
+        body
+        {
+            
+            background-image: url(https://media.giphy.com/media/l0MYJRosBVgKkq62Y/giphy.gif);
+            background-repeat: no-repeat;
+        
+            
+            
+            background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            
+        }
+        .brand
+        {
+            left: 0;
+            position: absolute;
+            top: 0px;
+            width: 200px;
+            height: 750px;
+            background-color: gray;
+            opacity:60%;
+            z-index: 0;
+            cursor: pointer;
+            font-family: "sdasd";
+        }
+        
+        .buttonbrand
+        {
+            background-color: grey;
+            border: 0px;
+            cursor: pointer;
+        }
+        .buttonbrand:hover
+        {
+            scale:1.5;
+            color:white;
+            
+        }
+        
+        
+        
+    .searchbox
+        {
+            border-radius: 50% 50%;
+            
+            
+            position: absolute;
+            background-color: white;
+            left: 263px;
+            width: 20px;
+            height:20px;
+            border: none;
+            cursor: pointer;
+            
+            background-color: grey;
+
+        }
+        .mainsearch
+        {
+            position: absolute;
+            border-radius: 30px;
+            background-color: white;
+            overflow: auto;
+            float: left;
+            width: 270px;
+            height: 20px;
+            padding: 8px;
+            border: solid 1px;
+            position: absolute;
+            top: 26px;
+            right: 70px;
+            background-color: grey;
+            opacity: 60%;
+
+
+        }
+        .inputsearch
+        {
+            position: absolute;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            border: solid 1px;
+            width: 250px;
+            opacity: 60%;
+        }
+
+
+        .signin
+        {
+            position: absolute;
+            border-radius: 50% 50%;
+            background-color: white;
+            overflow: auto;
+            float: left;
+            width: 60px;
+            height: 60px;
+            padding: 8px;
+            border: solid 1px;
+            position: absolute;
+            top: 15px;
+            right: 0px;
+            background-color: grey;
+            opacity: 60%;
+            cursor: pointer;
+
+        }
+    
+        #main
+        {
+            width: 25%;
+            height: auto;
+            background-color: white;
+            border: solid 1px;
+            position: absolute;
+            z-index: 1;
+            top: 38%;
+            left: 85%;
+            border-radius: 30px;
+            padding: 30px;
+            transform: translate(-50%,-50%);
+            opacity: 60%;
+            display: none;
+       
+        }
+        @media(max-width: 1000px)
+        {
+            #main
+            {
+                width: 50%;
+                top: 35%;
+            left: 70%;
+            transform: translate(-50%,-50%);
+            }
+        }
+        .input
+        {
+            border-radius: 4px;
+            height: 20px;
+            width: 170px;
+        }
+
+        .input2
+        {
+
+            height: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="brand">
+        <center>
+            <h1>Brand Name</h1>
+
+
+
+            <hr>
+            <a href="addidas.html">
+            <button class="buttonbrand">
+            <h3>Adidas</h3>
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iNDI4LjM4NCwyNjMuMjMyIDMzNS45MzYsMTA5LjQ3MiAyOTcuODU2LDEzMi4zODQgMjM3LjM3NiwxNjguNzM2IDI5Ny44NTYsMjY5LjQ0IDM3Ny42OTYsNDAyLjUyOCAgICAgNDI4LjM4NCw0MDIuNTI4IDUxMiw0MDIuNTI4ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjI5Ny44NTYsMzQ3Ljc0NCAyMTcuMzEyLDIxMy43MjggMTIxLjg4OCwyNzEuMTY4IDExOC42MjQsMjczLjA4OCAxMjEuODg4LDI3OC40OTYgMTk2LjQxNiw0MDIuNTI4ICAgICAyOTcuODU2LDQwMi41MjggMzMwLjYyNCw0MDIuNTI4ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjEyMS44ODgsMzU2LjcwNCA5OC42NTYsMzE4LjExMiAwLDM3Ny4zNzYgMTUuMDcyLDQwMi41MjggMTIxLjg4OCw0MDIuNTI4IDE0OS4zNzYsNDAyLjUyOCAgICIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" width="60px" height="60px">
+            </button>
+            </a>
+            <hr>
+
+            <a href="nike.html">
+            <button class="buttonbrand">
+                <h3>Nike</h3>
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMi4wMTMgNTEyLjAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyLjAxMyA1MTIuMDEzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjg3Ljc1NywyMjUuNzk0bC0zMS44MDgsOC4zNTJsLTg4LjI1NiwyMy4xMDRjLTMxLjE2OCw3LjcxMi01OC40MzIsMTcuOTg0LTg0LjcwNCw4Ljk5MiAgICBjLTM1LjcxMi0xNS40MjQtMzUuMDcyLTU1LjU1Mi04LjQ0OC05OC4yNEMyNy40NjksMjA2Ljg1LTU3LjIzNSwzMzEuMDc0LDU3LjMyNSwzNDMuNjE4YzE0LjU5MiwxLjkyLDQwLjU3Ni0zLjIsNjguOC0xNS4wNzIgICAgbDEyOS44MjQtNTMuMjhsMjU2LjA2NC0xMDQuNzA0TDI4Ny43NTcsMjI1Ljc5NHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" width="60px" height="60px">
+            </button>
+        </a>
+            <hr>
+
+            <a href="Convers.html">
+            <button class="buttonbrand">
+                <h3>Convers</h3>
+            <img src="converse.jpg" width="60px" height="60px">
+                
+            </button>
+            </a>
+            <hr>
+
+            <a href="van.html">
+            <button class="buttonbrand">
+                <h3>Vans</h3>
+                <img src="Vans.jpg" width="60px" height="60px">
+                
+            </button>
+            </a>
+            <hr>
+
+            <a href="lv.html">
+            <button class="buttonbrand">
+                <h3>Louis Vuitton</h3>
+                <img src="lv.jpg" height="60px" width="60px">
+                
+            </button>
+        </a>
+
+        </center>
+
+        
+    </div>
+    
+
+    
+    
+
+<div class="mainsearch">
+        <input class="inputsearch" type="text" name="search-box"  placeholder=" Search Here" >
+        <bottom class="searchbox"><i class="fa fa-search" aria-hidden="true"></i></bottom>
+
+    </div>
+        
+        <button class="signin" onclick="myFunction()">Sign In</button>
+    
+    <div id="main">
+    <form   method="post" name="createthis" onsubmit="return create()" href="learn html.html" 
+        > 
+        <div >
+            <h1 align="center">Sign in your Member Account</h1>
+            <p>It's quick easy</p><br>
+            <input class="input2" type="email" name="email" placeholder=" Kit email address" size="55px" pattern="^([a-zA-Z]+)\.([a-zA-Z]+)([0-9]+)@([a-z]+)\.([a-z]+)\.([a-z]+)$">
+            <br>
+            <br>
+            
+            <input class="input2" type="password" name="password2" placeholder="Confirm password" size="55px" >
+            <br>
+            <br>
+            <a href="signin.html">Create Account</a>
+            
+
+            <p style="font-size: 10px">By clicking Sign In, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+            <input type="submit" name="submit" value="Sign in">
+
+ 
+            
+            
+
+        </div>
+    </form>
+</div>
+
+    <script type="text/javascript">
+        
+
+        function myFunction() {
+        var x = document.getElementById("main");
+        if (x.style.display === "") {
+        x.style.display = "block";
+        } else {
+        x.style.display ="";
+        }
+        }
+            
+        
+
+
+    </script>
+    
+</body>
+</html>

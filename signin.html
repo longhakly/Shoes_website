@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.main
+		{
+			width: 25%;
+			height: auto;
+			background-color: white;
+			border: solid 1px;
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			left: 50%;
+			border-radius: 30px;
+			padding: 30px;
+			transform: translate(-50%,-50%);
+			opacity: 60%;
+		}
+		@media(max-width: 1000px)
+		{
+			.main
+			{
+				width: 50%;
+			}
+		}
+		body
+		{
+			background-image: url(https://image-cdn.hypb.st/https%3A%2F%2Fbae.hypebeast.com%2Ffiles%2F2019%2F06%2Fdesigner-sneakers-footwear-spring-summer-2020-dior-kim-jones-craig-green-adidas-futura-off-white-2.jpg?w=1600&cbr=1&q=90&fit=max);
+			background-size: 1540px, 800px;
+			background-repeat: no-repeat;
+		
+			
+			
+			background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+
+		}
+		.input
+		{
+			border-radius: 4px;
+			height: 20px;
+			width: 170px;
+		}
+
+		.input2
+		{
+
+			height: 20px;
+			border-radius: 4px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function create()
+		{
+			var firstn=document.createthis.firstname.value;
+			var lastn=document.createthis.lastname.value;
+			var pass=document.createthis.password.value;
+			var pass2=document.createthis.password2.value;
+			var bd=document.createthis.date.value;
+			var m=document.createthis.male.value;
+			
+			
+			if (firstn=="")
+			{
+				alert("Enter the firstname");
+				createthis.firstname.focus();
+				
+				return false;
+			}
+			else if (firstn.lenght<3)
+			{
+				alert("enter the firstname more than 5 character");
+				createthis.firstname.focus();
+				return false;
+			}
+			else if (lastn=="")
+			{
+				alert("Enter the lasttname");
+				createthis.lastname.focus();
+
+				return false;
+			}
+			else if (lastn.lenght<3)
+			{
+				alert("enter the lastname more than 5 character");
+				createthis.lastname.focus();
+				return false;
+			}
+			else if (pass=="")
+			{
+				alert("Enter the password");
+				createthis.password.focus();
+				return false;
+			}
+			else if (pass.lenght<7)
+			{
+				alert("enter the password more than 7 character");
+				createthis.password.focus();
+				return false;
+			}
+			else if (pass2=="")
+			{
+				alert("Enter the password");
+				createthis.password2.focus();
+				return false;
+			}
+			else if (pass2.lenght<7)
+			{
+				alert("enter the password more than 7 character");
+				createthis.password2.focus();
+				return false;
+			}
+			else if (pass!==pass2)
+			{
+				alert("please enter the correct password");
+				createthis.date.focus();
+
+				return false;
+			}
+			else if (bd=="")
+			{
+				alert("please enter your Birthday");
+				createthis.date.focus();
+				return false;
+			}
+			else if (m=="")
+			{
+				alert("What is your gender ?");
+				createthis.male.focus();
+				return false;
+			}
+			else if (true)
+			 {
+			let newWin = window.open("about:blank", "hello", "width=200,height=200");
+
+			newWin.document.write("Thank for give me to know your password .please...change your password before i do something");
+
+			 }
+
+
+
+			
+		} 
+
+	</script>
+</head>
+<body>
+	
+		<form   method="post" name="createthis" onsubmit="return create()" href="learn html.html" 
+		> 
+		<div class="main">
+			<h1 align="center">Create a new account</h1>
+			<p>It's quick easy</p><br>
+			<input class="input" type="text" name="firstname" placeholder="Firstname" pattern="^([A-Z]{1})*([a-z]+)$" >
+			<input  class="input"type="text" name="lastname" placeholder="Lastname" pattern="^([A-Z]{1})*([a-z]+)$">
+			<br>
+			<br>
+			<input class="input2" type="email" name="email" placeholder=" Kit email address" size="55px" pattern="^([a-zA-Z]+)\.([a-zA-Z]+)([0-9]+)@([a-z]+)\.([a-z]+)\.([a-z]+)$">
+			<br>
+			<br>
+			<input class="input2" type="password" name="password" placeholder="New password" size="55px" >
+			<br>
+			<br>
+			<input class="input2" type="password" name="password2" placeholder="Confirm password" size="55px" >
+			<br>
+			<br>
+			Birthday
+			<br>
+			<input class="input2" type="date" name="date">
+			<br>
+			<br>
+			Gender
+			<br>
+			<input type="radio" name="male" value="Female">Female
+			<input type="radio" name="male" value="male">Male
+			<input type="radio" name="male" value="Custom">Custom
+
+			<br>
+			<br>
+
+
+			<p style="font-size: 10px">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+			<input type="submit" name="submit" value="Create">
+ 
+			
+			
+
+		</div>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+
+}
+.brand
+		{
+			display:flex;
+			flex-direction: row;
+			flex-wrap:wrap;
+			
+			left: 10px;
+			position: absolute;
+			top: 100px;
+			width: 200px;
+			height: 750px;
+			
+			z-index: 0;
+			cursor: pointer;
+			padding: 0px;
+			margin:0px;
+		}
+		
+		.buttonbrand
+		{
+			background-color: white;
+			border: 0px;
+			cursor: pointer;
+			padding:0px;
+			margin:0px;
+		}
+*{
+	margin: 0px;
+}
+article img{
+	width:330px;
+	height:300px;	
+}
+.cards {
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+	position: absolute;
+	left:170px;
+}
+.card {
+flex: 0 0 200px;
+margin: 10px;
+border: 1px solid #ccc;
+padding:20px;
+}
+.card img {
+	;
+}
+.card .text {
+padding: 0 20px 20px;
+}
+.card .text > button {
+background: gray;
+border: 0;
+color: white;
+padding: 10px;
+width: 100%;
+}
+.card button{
+	color:white;
+	background-color:gray;
+	border : none;
+	
+	
+}
+.brandtitle{
+	background-color: grey;
+	color:white;
+	margin-top:0;
+	padding-top:5px;
+	paddinf-bottom:5px;
+	display: flex;
+	flex:row;
+	flex-direction: row;
+		
+}
+.brandtitle img{
+	width:110px;
+	height: 100px;
+	
+}
+.adjust{
+	margin-left:10px;
+}
+h1{
+	 font-family: 'Roboto', ;
+	font-weight:8;
+	letter-spacing: 1px;
+}
+@media(max-width: 1000px)
+{
+	.cards {
+
+	left:0px;
+}
